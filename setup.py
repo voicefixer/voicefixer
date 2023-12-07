@@ -8,7 +8,7 @@ URL = "https://github.com/fakerybakery/voicefixer"
 EMAIL = "me@mrfake.name"
 AUTHOR = "mrfakename"
 REQUIRES_PYTHON = ">=3.7.0"
-VERSION = "2.3.3"
+VERSION = "2.3.4"
 REQUIRED = [
     "matplotlib",
     "cached_path",
