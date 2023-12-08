@@ -25,7 +25,7 @@ def check_arguments(args):
     # assert (
     #     process_file or process_folder
     # ), "Error: You need to specify a input file path (--infile) or a input folder path (--infolder) to proceed. For more information please run: voicefixer -h"
-    if not (process_file or process_file):
+    if not (process_file or process_folder):
         print(
             "Error: Please specify an input file path (--infile) or an input folder path (--infolder) to proceed. For more information, please run: voicefixer -h"
         )
