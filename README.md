@@ -201,7 +201,7 @@ for mode in [0,1,2]:
 
 ## License
 
-VoiceFixer 2 is licensed under the **MIT license**.
+VoiceFixer 2 is licensed under the **VoiceFixer license**, a license based on the BSD-3-Clause license with an additional restriction on the logo. Although it is not approved by the OSI, it follows the OSI's guidelines for an open source license.
 
 Contributions to this software, including but not limited to pull requests, issues, suggestions, or code contributions, are subject to the following terms:
 
