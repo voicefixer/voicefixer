@@ -53,9 +53,8 @@ setup(
     extras_require=EXTRAS,
     packages=find_packages(),
     include_package_data=True,
-    license="MIT",
+    license="VoiceFixer (BSD-3 + logo restriction)",
     classifiers=[
-        "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9",
