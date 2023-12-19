@@ -4,7 +4,7 @@ from setuptools import find_packages, setup
 
 NAME = "voicefixer2"
 DESCRIPTION = "General speech restoration toolkit."
-URL = "https://github.com/fakerybakery/voicefixer"
+URL = "https://github.com/voicefixer/voicefixer"
 EMAIL = "me@mrfake.name"
 AUTHOR = "mrfakename"
 REQUIRES_PYTHON = ">=3.7.0"
