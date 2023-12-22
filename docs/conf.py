@@ -15,7 +15,7 @@ import sys
 
 project = "VoiceFixer 2"
 author = "mrfakename"
-copyright = "2023 mrfakename. All rights reserved."
+copyright = "2023 mrfakename. All rights reserved. This documentation is licensed under the CC-BY-NC-ND 4.0 International license."
 
 # The full version, including alpha/beta/rc tags
 # version = release = '0.1.0'
@@ -100,3 +100,8 @@ extlinks = {
     "pull": ("https://github.com/voicefixer/voicefixer/pull/%s", "🚀 %s"),
     "tag": ("https://github.com/voicefixer/voicefixer/releases/tag/%s", "🏷️ %s"),
 }
+
+
+
+
+pygments_style = 'sphinx'
