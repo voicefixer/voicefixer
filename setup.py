@@ -23,6 +23,7 @@ REQUIRED = [
     "soundfile",
     "librosa",
     "click",
+    "sphinx_design"
 ]
 EXTRAS = {"docs": ["sphinxawesome-theme", "myst-parser"]}
 here = os.path.abspath(os.path.dirname(__file__))
