@@ -6,3 +6,4 @@ dist
 build
 *.mp3
 *.wav
+_build

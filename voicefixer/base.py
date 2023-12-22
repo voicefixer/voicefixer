@@ -11,6 +11,9 @@ EPS = 1e-8
 
 class VoiceFixer(nn.Module):
     def __init__(self, model='voicefixer/voicefixer'):
+        '''
+        Initialize VoiceFixer model
+        '''
         super(VoiceFixer, self).__init__()
         self._model = voicefixer_fe(channels=2, sample_rate=44100)
         self.analysis_module_ckpt = str(
