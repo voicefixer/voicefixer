@@ -2,6 +2,8 @@
 
 VoiceFixer 2 is licensed under a BSD-like license based on the BSD-3-Clause license. The [original version](https://github.com/haoheliu/voicefixer) of VoiceFixer is licensed under the MIT license.
 
+This documentation is licensed under the CC-BY-NC-ND 4.0 International license.
+
 ## VoiceFixer License
 
 Copyright (c) 2021-2023 Haohe Liu. Copyright (c) 2023 VoiceFixer 2.
@@ -14,3 +16,4 @@ Redistribution and use in source and binary forms, with or without modification,
    4. The logo of the software may not be used to endorse or promote or advertise products derived from this software without specific prior written permission.
 
 THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+

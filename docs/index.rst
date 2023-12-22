@@ -68,6 +68,7 @@ Table of Contents
    :caption: Get Started
    
    get-started/install.md
+   get-started/quickstart.md
 
 .. toctree::
    :maxdepth: 2
