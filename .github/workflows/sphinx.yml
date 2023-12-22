@@ -14,8 +14,6 @@ jobs:
       pages: write
       id-token: write
     steps:
-    - name: Install dependencies
-      run: |
-        pip install sphinxawesome-theme myst-parser sphinx-notfound-page sphinx_design
-    - id: deployment
-      uses: sphinx-notes/pages@v3
+    - name: Sphinx to GitHub Pages
+      uses: sphinx-notes/pages@3.0
+            
