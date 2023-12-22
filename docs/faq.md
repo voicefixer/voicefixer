@@ -6,11 +6,11 @@ VoiceFixer is a general speech restoration toolkit. VoiceFixer uses AI to remove
 
 ## How is VoiceFixer 2 different from VoiceFixer?
 
-VoiceFixer was semi-abandoned several years ago. VoiceFixer 2 takes VoiceFixer to the next level, with Apple Silicon GPU acceleration support. You can visit the original VoiceFixer's website [here](https://github.com/haoheliu/voicefixer).
+VoiceFixer 2 takes VoiceFixer to the next level, with Apple Silicon GPU acceleration support. You can visit the original VoiceFixer's website [here](https://github.com/haoheliu/voicefixer).
 
 ## Is VoiceFixer 2 affiliated with the original VoiceFixer?
 
-No, VoiceFixer 2 is not affiliated with the original creator of VoiceFixer, Haohe Liu. It has been independently forked and improved.
+No, VoiceFixer 2 is not affiliated with the original creator of VoiceFixer.
 
 ## Does VoiceFixer support GPUs?
 
