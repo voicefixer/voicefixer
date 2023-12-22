@@ -35,12 +35,14 @@ brew install ffmpeg
 :::
 
 :::{tab-item} Linux/Ubuntu
+Here's how to install FFmpeg on Linux/Ubuntu:
 ```bash
 sudo apt install ffmpeg
 ```
 :::
 
 :::{tab-item} Windows
+Here's how to install FFmpeg on Windows:
 ```bash
 scoop install ffmpeg
 ```

@@ -72,7 +72,7 @@ Table of Contents
    get-started/quickstart.md
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 2
    :caption: Usage
 
    usage/cli.md
