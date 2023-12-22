@@ -25,7 +25,7 @@ extensions = [
     "myst_parser",
     "sphinxawesome_theme.highlighting",
     "sphinx_design",
-    'notfound.extension',
+    "notfound.extension",
 ]
 myst_enable_extensions = ["colon_fence"]
 
@@ -106,6 +106,4 @@ extlinks = {
 }
 
 
-
-
-pygments_style = 'sphinx'
+pygments_style = "sphinx"
