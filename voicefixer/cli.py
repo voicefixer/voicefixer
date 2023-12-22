@@ -7,7 +7,7 @@ from glob import glob
 @click.argument("type", type=click.Choice(["file", "folder"], case_sensitive=False))
 @click.argument("path", type=click.Path(exists=True))
 @click.argument("output", type=click.Path(exists=False))
-@click.option("--mode", "-m", type=click.Choice([0, 1, 2]), default=0)
+@click.option("--mode", "-m", type=click.Choice(["0", "1", "2"]), default=0)
 def main(type, path, output, mode):
     from voicefixer import VoiceFixer
     import torch
