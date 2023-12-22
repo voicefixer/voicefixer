@@ -63,12 +63,20 @@ Here are some examples of what VoiceFixer 2 can do:
 
 Table of Contents
 -----------------
+
 .. toctree::
    :maxdepth: 2
    :caption: Get Started
    
    get-started/install.md
    get-started/quickstart.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Usage
+
+   usage/advanced/index.rst
+   usage/debugging.md
 
 .. toctree::
    :maxdepth: 2

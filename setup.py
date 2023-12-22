@@ -63,6 +63,7 @@ setup(
     entry_points={
         "console_scripts": [
             "voicefixer = voicefixer.cli:main",
+            "voicefixer-legacy = voicefixer.legacycli:main",
         ],
     },
 )
