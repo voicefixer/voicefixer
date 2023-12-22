@@ -1,6 +1,10 @@
 VoiceFixer 2
 ============
 
+.. note::
+
+   VoiceFixer 2 documentation is in beta. We plan to add more documentation in the future.
+
 .. rst-class:: lead
 
    A toolkit for general speech restoration.
@@ -99,8 +103,15 @@ Table of Contents
    :maxdepth: 1
    :caption: Project
    
+   Source Code (GitHub) <https://github.com/voicefixer/voicefixer>
    Live Demo <https://huggingface.co/spaces/voicefixer/voicefixer>
    Free API <https://huggingface.co/spaces/voicefixer/voicefixer-api>
-   GitHub <https://github.com/voicefixer/voicefixer>
    license.md
    faq.md
+
+.. toctree::
+   :maxdepth: 1
+   :caption: Support
+   
+   GitHub Issues <https://github.com/voicefixer/voicefixer/issues>
+   GitHub Discussions <https://github.com/voicefixer/voicefixer/discussions>
