@@ -10,7 +10,7 @@ VoiceFixer was semi-abandoned several years ago. VoiceFixer 2 takes VoiceFixer t
 
 ## Is VoiceFixer 2 affiliated with the original VoiceFixer?
 
-No, VoiceFixer 2 is not affiliated with the original creator of VoiceFixer, Haohe Liu. It has been independently forked and improved. We are actively reviewing the code to improve quality and remove direct file links.
+No, VoiceFixer 2 is not affiliated with the original creator of VoiceFixer, Haohe Liu. It has been independently forked and improved.
 
 ## Does VoiceFixer support GPUs?
 
