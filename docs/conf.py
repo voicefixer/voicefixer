@@ -1,5 +1,6 @@
 from sphinxawesome_theme import ThemeOptions
 from dataclasses import asdict
+
 # This file is generated from sphinx-notes/template.
 # You need to consider modifying the TEMPLATE or modifying THIS FILE.
 
@@ -12,28 +13,28 @@ from dataclasses import asdict
 import os
 import sys
 
-project = 'VoiceFixer 2'
-author = 'mrfakename'
+project = "VoiceFixer 2"
+author = "mrfakename"
 copyright = "2023 mrfakename. All rights reserved."
 
 # The full version, including alpha/beta/rc tags
 # version = release = '0.1.0'
 
 extensions = [
-    'sphinx.ext.githubpages',
-    'myst_parser',
+    "sphinx.ext.githubpages",
+    "myst_parser",
     "sphinxawesome_theme.highlighting",
 ]
 
-templates_path = ['_templates']
+templates_path = ["_templates"]
 
-master_doc = 'index'
+master_doc = "index"
 
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 show_authors = True
 
 
-html_theme = 'sphinxawesome_theme'
+html_theme = "sphinxawesome_theme"
 html_title = project
 html_permalinks_icon = (
     '<svg xmlns="http://www.w3.org/2000/svg" '
@@ -48,9 +49,9 @@ html_permalinks_icon = (
 
 theme_options = ThemeOptions(
     show_prev_next=True,
-    awesome_external_links=False, # Wait for https://github.com/kai687/sphinxawesome-theme/issues/142#issuecomment-1867066326
-    logo_light='_images/logo_round.png',
-    logo_dark='_images/logo_round.png',
+    awesome_external_links=False,  # Wait for https://github.com/kai687/sphinxawesome-theme/issues/142#issuecomment-1867066326
+    logo_light="_images/logo_round.png",
+    logo_dark="_images/logo_round.png",
     extra_header_link_icons={
         "repository on GitHub": {
             "link": "https://github.com/voicefixer/voicefixer",
@@ -86,16 +87,16 @@ html_theme_options = asdict(theme_options)
 
 html_show_sphinx = False
 
-html_static_path = ['_static']
+html_static_path = ["_static"]
 
 
-html_favicon = '_images/logo_round.png'
+html_favicon = "_images/logo_round.png"
 
 
-extensions.append('sphinx.ext.extlinks')
+extensions.append("sphinx.ext.extlinks")
 extlinks = {
-    'gh': ("https://github.com/kai687/sphinxawesome-theme/blob/main/%s", "%s"),
-    'ghdir': ("https://github.com/kai687/sphinxawesome-theme/tree/main/%s", "%s"),
-    'pull': ('https://github.com/voicefixer/voicefixer/pull/%s', '🚀 %s'),
-    'tag': ('https://github.com/voicefixer/voicefixer/releases/tag/%s', '🏷️ %s'),
+    "gh": ("https://github.com/kai687/sphinxawesome-theme/blob/main/%s", "%s"),
+    "ghdir": ("https://github.com/kai687/sphinxawesome-theme/tree/main/%s", "%s"),
+    "pull": ("https://github.com/voicefixer/voicefixer/pull/%s", "🚀 %s"),
+    "tag": ("https://github.com/voicefixer/voicefixer/releases/tag/%s", "🏷️ %s"),
 }

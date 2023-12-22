@@ -10,21 +10,13 @@ EPS = 1e-8
 
 
 class VoiceFixer(nn.Module):
-    def __init__(self, model='voicefixer/voicefixer'):
-        '''
+    def __init__(self, model="voicefixer/voicefixer"):
+        """
         Initialize VoiceFixer model
-        '''
+        """
         super(VoiceFixer, self).__init__()
         self._model = voicefixer_fe(channels=2, sample_rate=44100)
-        self.analysis_module_ckpt = str(
-            cached_path(f"hf://{model}/vf.ckpt")
-        )
-        if not os.path.exists(self.analysis_module_ckpt):
-            raise RuntimeError(
-                "Error 0: The checkpoint for analysis module (vf.ckpt) is not found in ~/.cache/voicefixer/analysis_module/checkpoints."
-            )
-        # self._model.load_state_dict(torch.load(self.analysis_module_ckpt))
-        # self._model.eval()
+        self.analysis_module_ckpt = str(cached_path(f"hf://{model}/vf.ckpt"))
         saved_state_dict = torch.load(self.analysis_module_ckpt)
         model_state_dict = self._model.state_dict()
         new_state_dict = {
@@ -49,7 +41,7 @@ class VoiceFixer(nn.Module):
                 break
         return wav_10k, int((sample_rate // 2) * (i / fbins))
 
-    def _load_wav(self, path, sample_rate, threshold=0.95):
+    def _load_wav(self, path, sample_rate=22050, threshold=0.95):
         wav_10k, _ = librosa.load(path, sr=sample_rate)
         return wav_10k
 
@@ -143,23 +135,18 @@ class VoiceFixer(nn.Module):
             # unify energy
             if torch.max(torch.abs(out)) > 1.0:
                 out = out / torch.max(torch.abs(out))
-                print("Warning: Exceed energy limit,", input)
-            # frame alignment
             out, _ = self._trim_center(out, segment)
             res.append(out)
             break_point += seg_length
         out = torch.cat(res, -1)
         return tensor2numpy(out.squeeze(0))
 
-    def restore(
-        self, input, output, cuda=False, mode=0, your_vocoder_func=None, tqdm=tqdm
-    ):
+    def restore_file(self, input, output, cuda=False, mode=0, tqdm=tqdm):
         wav_10k = self._load_wav(input, sample_rate=44100)
         out_np_wav = self.restore_inmem(
             wav_10k,
             cuda=cuda,
             mode=mode,
-            your_vocoder_func=your_vocoder_func,
             tqdm=tqdm,
         )
         save_wave(out_np_wav, fname=output, sample_rate=44100)

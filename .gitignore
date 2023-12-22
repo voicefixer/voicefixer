@@ -7,3 +7,4 @@ build
 *.mp3
 *.wav
 _build
+build_docs.sh

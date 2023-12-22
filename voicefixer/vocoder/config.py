@@ -10,9 +10,7 @@ class Config:
     def refresh(cls, sr):
         if sr == 44100:
             Config.ckpt = str(
-                cached_path(
-                    "hf://voicefixer/vocoder/model.ckpt-1490000_trimed.pt"
-                )
+                cached_path("hf://voicefixer/vocoder/model.ckpt-1490000_trimed.pt")
             )
             Config.cond_channels = 512
             Config.m_channels = 768
