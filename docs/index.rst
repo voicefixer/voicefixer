@@ -75,6 +75,7 @@ Table of Contents
    :maxdepth: 2
    :caption: Usage
 
+   usage/cli.md
    usage/advanced/index.rst
    usage/debugging.md
 
