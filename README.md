@@ -40,7 +40,6 @@ We’ve added the following features in VoiceFixer 2:
 * Nov 11, 2023: Add progress bar support (requires `ffmpeg`) (see TODO below)
 * Nov 11, 2023: Add preliminary MP3 support (requires `ffmpeg`) (see TODO below)
 * Nov 11, 2023: Fix CLI issue (see TODO below)
-* Sep 14, 2023: Switch to NOSCL-C-2.0 license
 * Sep 11, 2023: Forked from VoiceFixer
 
 ## To-Do
