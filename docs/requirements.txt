@@ -1,0 +1,5 @@
+sphinx
+sphinxawesome-theme
+myst-parser
+sphinx-notfound-page
+sphinx_design
