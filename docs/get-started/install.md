@@ -6,6 +6,25 @@ You can install VoiceFixer from PyPI or directly from the source repository.
 When installing from PyPI, make sure you install `voicefixer2` and not `voicefixer`. Installing `voicefixer` will install the original version of VoiceFixer, which may be incompatible with VoiceFixer 2.
 ::::
 
+
+::::{tab-set}
+
+:::{tab-item} PyPI
+Here's how to install the latest stable release of VoiceFixer 2 from PyPI:
+```bash
+pip install -U voicefixer2
+```
+:::
+
+:::{tab-item} Direct Installation
+Here's how to install the latest development release of VoiceFixer 2 from PyPI:
+```bash
+pip install -U git+https://github.com/voicefixer/voicefixer
+```
+:::
+
+::::
+
 :::::{note}
 If you have any issues on Apple Silicon, please install PyTorch Nightly:
 
@@ -28,25 +47,6 @@ conda install pytorch-nightly::pytorch torchvision torchaudio -c pytorch-nightly
 ::::
 
 :::::
-
-::::{tab-set}
-
-:::{tab-item} PyPI
-Here's how to install the latest stable release of VoiceFixer 2 from PyPI:
-```bash
-pip install -U voicefixer2
-```
-:::
-
-:::{tab-item} Direct Installation
-Here's how to install the latest development release of VoiceFixer 2 from PyPI:
-```bash
-pip install -U git+https://github.com/voicefixer/voicefixer
-```
-:::
-
-::::
-
 
 ## Including in Requirements
 
