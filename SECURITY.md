@@ -11,4 +11,3 @@ Only the latest version of VoiceFixer 2 is supported.
 Please do not open a GitHub Issue or Pull Request, but instead contact the maintainer of this project.
 
 * [Twitter DM](https://twitter.com/realmrfakename)
-* 
