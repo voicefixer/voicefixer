@@ -5,3 +5,4 @@ Python API
    :caption: Python API
    
    basic.md
+   methods.md

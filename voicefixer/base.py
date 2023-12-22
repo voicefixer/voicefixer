@@ -102,9 +102,18 @@ class VoiceFixer(nn.Module):
 
     @torch.no_grad()
     def restore_inmem(
-        self, wav_10k, cuda=False, mode=0, your_vocoder_func=None, tqdm=tqdm
+        self,
+        wav_10k,
+        cuda=(torch.cuda.is_available() or torch.backends.mps.is_available()),
+        mode=0,
+        your_vocoder_func=None,
+        tqdm=tqdm,
     ):
-        check_cuda_availability(cuda=cuda)
+        if (cuda and not torch.cuda.is_available()) and (
+            cuda and not torch.backends.mps.is_available()
+        ):
+            print("WARNING: GPU is requested but unavailable, falling back to CPU")
+            cuda = False
         self._model = try_tensor_cuda(self._model, cuda=cuda)
         if mode == 0:
             self._model.eval()

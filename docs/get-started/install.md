@@ -2,6 +2,10 @@
 
 You can install VoiceFixer from PyPI or directly from the source repository.
 
+::::{note}
+When installing from PyPI, make sure you install `voicefixer2` and not `voicefixer`. Installing `voicefixer` will install the original version of VoiceFixer, which may be incompatible with VoiceFixer 2.
+::::
+
 ::::{tab-set}
 
 :::{tab-item} PyPI
