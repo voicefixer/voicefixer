@@ -8,4 +8,4 @@
 * **Nov 11:** Add progress bar support (requires **ffmpeg)** (see TODO below)
 * **Nov 11:** Add preliminary MP3 support (requires ffmpeg) (see TODO below)
 * **Nov 11:** Fix CLI issue (see TODO below)
-Sep 11: Forked from VoiceFixer
+* **Sep 11:** Forked from VoiceFixer
