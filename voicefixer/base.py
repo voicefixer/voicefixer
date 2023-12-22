@@ -140,7 +140,7 @@ class VoiceFixer(nn.Module):
         out = torch.cat(res, -1)
         return tensor2numpy(out.squeeze(0))
 
-    def restore_file(self, input, output, cuda=False, mode=0, tqdm=tqdm):
+    def restore(self, input, output, cuda=False, mode=0, tqdm=tqdm):
         wav_10k = self._load_wav(input, sample_rate=44100)
         out_np_wav = self.restore_inmem(
             wav_10k,
