@@ -36,7 +36,6 @@ We’ve added the following features in VoiceFixer 2:
 * Nov 11, 2023: Add progress bar support (requires `ffmpeg`) (see TODO below)
 * Nov 11, 2023: Add preliminary MP3 support (requires `ffmpeg`) (see TODO below)
 * Nov 11, 2023: Fix CLI issue (see TODO below)
-* Sep 14, 2023: Switch to NOSCL-C-2.0 license
 * Sep 11, 2023: Forked from VoiceFixer
 
 ## To-Do
@@ -87,7 +86,7 @@ pip install voicefixer2
 
 This will install the latest published release.
 
-**If you would like to install the latest development version, or do not trust PyPI for any reason, please install directly from the source:**
+**If you would like to install the latest development version, please install directly from the source:**
 
 ```bash
 pip install git+https://github.com/fakerybakery/voicefixer
