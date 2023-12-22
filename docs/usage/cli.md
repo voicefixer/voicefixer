@@ -2,7 +2,7 @@
 
 VoiceFixer 2 has a CLI that allows you to easily restore audio without Python.
 
-```
+```text
 Usage: voicefixer [OPTIONS] {file|folder} PATH OUTPUT
 
 Options:
@@ -34,7 +34,7 @@ voicefixer folder input output
 
 Recently, VoiceFixer 2 introduced a completely new CLI overhaul with breaking changes. You can still access the legacy CLI, however it will be removed in a future release. Please ensure you've locked the version of VoiceFixer 2 in your dependencies to `voicefixer2==2.3.8`.
 
-```
+```text
 usage: voicefixer-legacy [-h] [-i INFILE] [-o OUTFILE] [-ifdr INFOLDER]
                          [-ofdr OUTFOLDER] [--mode {0,1,2,all}] [--disable-cuda]
                          [--silent]
