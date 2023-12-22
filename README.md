@@ -42,24 +42,24 @@ We’ve added the following features in VoiceFixer 2:
 
 Here's what we still need to do - feel free to contribute:
 
-- [ ] Fine-tune model for better results (this one requires $$$/compute :) - see [this](https://github.com/haoheliu/voicefixer_main) training repo)
-- [ ] Add MP3 support for folders
-- [ ] Allow user to restore an object (don't require a file)
+- [ ] Fine-tune model for better results (this one requires compute - see [this](https://github.com/haoheliu/voicefixer_main) training repo)
+- [x] Add MP3 support for folders
+- [x] Allow user to restore an object (don't require a file)
 - [ ] Allow user to input audio as an audio object, wave object, numpy array, torchaudio object, or pydub object and to output audio in varied formats as well, similar to how Gradio can accept audio in many different formats
 - [ ] Update model to make [modifying state dict](https://github.com/voicefixer/voicefixer/commit/1b8c384bc2f34645e72c67e46db92b3accd20613) unnecessary - loading it twice increases VRAM usage (related to latest librosa issue)
-    - [x] Update model
-    - [ ] Remove code (still needs testing)
+    - [ ] Update model
+    - [ ] Remove code
 - [ ] [Realtime support](https://github.com/haoheliu/voicefixer_main/issues/11)
 - [ ] [Add to HF Audio-to-Audio pipeline](https://huggingface.co/docs/hub/models-adding-libraries)
 - [x] Support Windows (mostly file paths) - maybe use [cached_path](https://github.com/allenai/cached_path)
     - [ ] Fully test on Windows
-- [ ] Clean up CLI (may have breaking changes)
+- [x] Clean up CLI (may have breaking changes)
 - [x] Support custom models
 - [x] Use latest version of librosa (probably pretty important, here's the issue the model doesn't work with latest torchlibrosa and the old torchlibrosa doesn't work with the latest librosa. need to completely retrain the model probably or change model python file) - fixed thanks to @manmay-nakhashi
 - [x] Switch models from Zenodo to Hugging Face to increase speed and control over models (in progress)
-- [x] Publish to pip (plz don't contribute on this one - I'll do it eventually but I have a certain workflow + system I like to use :) thanks!)
-- [x] Add TQDM progress bar - crucial for longer conversions - maybe a beginner contribution?
-- [x] Implement .mp3 support (currently only supports .wav) - probably won't be that hard - just need to use pydub. good beginner contribution!
+- [x] Publish to pip
+- [x] Add TQDM progress bar - crucial for longer conversions
+- [x] Implement .mp3 support (currently only supports .wav)
 - [x] Fix CLI instead of copying to /bin use CLI like [this](https://github.com/fakerybakery/simplesplit/blob/main/setup.py)
 
 ## Demo
