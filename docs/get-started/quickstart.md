@@ -1,5 +1,21 @@
 # Quick Start
 
+Here are some basic examples. Check out the Usage section for more detailed documentation.
+
+## CLI
+
+Restore a single file:
+
+```bash
+voicefixer file input.wav output.wav
+```
+
+Restore all `.mp3` or `.wav` files in a directory:
+
+```bash
+voicefixer folder input_folder output_folder
+```
+
 ## Python API
 
 Run all modes:

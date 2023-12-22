@@ -65,14 +65,14 @@ Table of Contents
 -----------------
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Get Started
    
    get-started/install.md
    get-started/quickstart.md
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Usage
 
    usage/cli.md
@@ -80,14 +80,14 @@ Table of Contents
    usage/debugging.md
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Updates
 
    news.md
    changelog.md
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Project
    
    Live Demo <https://huggingface.co/spaces/voicefixer/voicefixer>
