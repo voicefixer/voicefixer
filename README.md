@@ -90,7 +90,7 @@ pip install voicefixer2
 
 This will install the latest published release.
 
-**If you would like to install the latest development version, or do not trust PyPI for any reason, please install directly from the source:**
+**If you would like to install the latest development version, please install directly from the source:**
 
 ```bash
 pip install git+https://github.com/fakerybakery/voicefixer
