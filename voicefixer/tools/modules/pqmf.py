@@ -1,12 +1,3 @@
-"""
-@File    :   subband_util.py
-@Contact :   liu.8948@buckeyemail.osu.edu
-@License :   (C)Copyright 2020-2021
-@Modify Time      @Author    @Version    @Desciption
-------------      -------    --------    -----------
-2020/4/3 4:54 PM   Haohe Liu      1.0         None
-"""
-
 import torch
 import torch.nn.functional as F
 import torch.nn as nn

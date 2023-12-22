@@ -1,5 +1,4 @@
 from voicefixer.restorer.modules import *
-
 from voicefixer.tools.pytorch_util import *
 
 

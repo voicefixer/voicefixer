@@ -7,7 +7,7 @@ import warnings
 
 
 class MelScale(torch.nn.Module):
-    r"""Turn a normal STFT into a mel frequency STFT, using a conversion
+    """Turn a normal STFT into a mel frequency STFT, using a conversion
     matrix.  This uses triangular filter banks.
 
     User can control which device the filter bank (`fb`) is (e.g. fb.to(spec_f.device)).
@@ -26,6 +26,7 @@ class MelScale(torch.nn.Module):
         :py:func:`torchaudio.functional.melscale_fbanks` - The function used to
         generate the filter banks.
     """
+
     __constants__ = ["n_mels", "sample_rate", "f_min", "f_max"]
 
     def __init__(

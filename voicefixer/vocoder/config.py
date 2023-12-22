@@ -1,7 +1,6 @@
 import torch
 import numpy as np
 import os
-from voicefixer.tools.path import root_path
 from cached_path import cached_path
 
 
