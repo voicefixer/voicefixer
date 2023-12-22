@@ -2,7 +2,7 @@ Advanced Usage
 -----------------
 .. toctree::
    :maxdepth: 2
-   :caption: Get Started
+   :caption: Advanced Usage
    
    modes.md
    chunking.md

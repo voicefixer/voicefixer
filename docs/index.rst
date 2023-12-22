@@ -76,8 +76,17 @@ Table of Contents
    :caption: Usage
 
    usage/cli.md
+   usage/api/index.rst
    usage/advanced/index.rst
    usage/debugging.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: REST API
+
+   api/index.md
+   api/terms.md
+   api/usage.md
 
 .. toctree::
    :maxdepth: 1

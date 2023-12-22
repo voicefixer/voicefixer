@@ -22,10 +22,9 @@ REQUIRED = [
     "scipy",
     "soundfile",
     "librosa",
-    "click",
-    "sphinx_design"
+    "click"
 ]
-EXTRAS = {"docs": ["sphinxawesome-theme", "myst-parser"]}
+EXTRAS = {"docs": ["sphinxawesome-theme", "myst-parser", 'sphinx-notfound-page', "sphinx_design"]}
 here = os.path.abspath(os.path.dirname(__file__))
 try:
     with io.open(os.path.join(here, "README.md"), encoding="utf-8") as f:
