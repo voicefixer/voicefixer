@@ -3,10 +3,6 @@
 
 **Important:** The maintainers(s) of this repository are not affiliated or connected with the original version of VoiceFixer.
 
-**Note:** We are actively accepting contributions (+ contributors)! Please check the To Do list for how you can contribute!
-
-**NEW: Our [documentation website](https://voicefixer.github.io/voicefixer/) is now live!**
-
 # <img src="https://camo.githubusercontent.com/a3b2d4da7e2d171fd691b5d2da5af46013dcb7904132485a3af7d14b6468aeac/68747470733a2f2f6769746875622d70726f64756374696f6e2d757365722d61737365742d3632313064662e73332e616d617a6f6e6177732e636f6d2f37363138363035342f3237303230343034382d34393962333538642d303036332d343562632d393235622d6434313336633035616633342e706e67" width="30"> VoiceFixer 2
 
 **[Docs](https://voicefixer.github.io/voicefixer/)**
@@ -17,19 +13,19 @@ VoiceFixer aims to restore human speech, regardless of how seriously degraded it
 
 ## What's different from the original VoiceFixer?
 
-The [original version of VoiceFixer](https://github.com/haoheliu/voicefixer) continues to be updated with minor changes and bug fixes, however if one tries to install it and run it out of the box, one would encounter several errors that require modifying installed packages to fix.
-
-**What’s the problem? How does this fix it?** VoiceFixer requires an old version of the `librosa` library, which is incompatible with new versions of the `numpy` library. We’ve fixed this issue by fixing the old version of `librosa` and `voicefixer`. We also added several new features.
+The [original version of VoiceFixer](https://github.com/haoheliu/voicefixer) continues to be updated with minor changes and bug fixes. VoiceFixer 2 adds major new features (including Apple Silicon support, a revamped CLI, and more) and fixes several bugs.
 
 ### New features in VoiceFixer 2
 
 We’ve added the following features in VoiceFixer 2:
 
-* We’ve added MPS support, which means you can use GPU acceleration on M1 macs. You can enable this by setting the `cuda` parameter to `True`. It’s automatically enabled when using the command line interface (CLI).
+* We’ve added MPS support, which means you can use GPU acceleration on macOS devices running on Apple Silicon chips.
+* Revamped CLI.
+* Documentation
 * We've added a progress bar through TQDM for longer audio
 * We now support non-WAV files (ie MP3)
-* We're now using `cached_path` instead of hard-coding a cache path to increase OS support
-* We're featuring faster model downloads w/ Hugging Face
+* We're now using `cached_path` instead of using a hard-coded a cache path to increase OS support
+* We're featuring much faster model downloads w/ Hugging Face (the original VoiceFixer models are hosted on Zenodo)
 * More features coming soon!
 
 ## Changelog
