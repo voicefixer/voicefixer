@@ -107,6 +107,7 @@ Table of Contents
    Live Demo <https://huggingface.co/spaces/voicefixer/voicefixer>
    Free API <https://huggingface.co/spaces/voicefixer/voicefixer-api>
    license.md
+   contributing.md
    faq.md
 
 .. toctree::

@@ -62,11 +62,41 @@ Here's what we still need to do - feel free to contribute:
 - [x] Implement .mp3 support (currently only supports .wav)
 - [x] Fix CLI instead of copying to /bin use CLI like [this](https://github.com/fakerybakery/simplesplit/blob/main/setup.py)
 
-## Demo
+## Usage
+
+If you'd just like to process a single file, try our live demo or REST API. Please see the Hosted Services section below for details.
+
+### Documentation
+
+Please visit our [documentation](https://voicefixer.github.io/voicefixer/) for examples, a quick start guide, and more!
+
+### Installation
+
+Please refer to the [documentation](https://voicefixer.github.io/voicefixer/get-started/install.html).
+
+**NOTE: When installing from PyPI, make sure to install `voicefixer2`.**
+
+## Usage
+
+**Important:** FFmpeg must be installed to support non-.wav files.
+
+### Command Line
+
+Please see the [documentation](https://voicefixer.github.io/voicefixer/usage/cli.html).
+
+### Python API
+
+Please see the [documentation](https://voicefixer.github.io/voicefixer/usage/api/basic.html).
+
+## Hosted Services
+
+VoiceFixer 2 provides free hosted services. The reliability of these services is not guaranteed.
+
+### Live Demo
 
 [Check out the demos to see what VoiceFixer can do!](https://voicefixer.github.io/)
 
-## Installation
+### REST API
 
 **Don't want to install the package, but just want to try it out?**
 
@@ -76,137 +106,15 @@ Use our free API (no API key required) for audio files under 5 minutes. Non-comm
 curl -X POST -H "Content-Type: multipart/form-data" -F "file=@test.mp3" https://voicefixer-voicefixer-api.hf.space/process_audio > processed_audio.wav
 ```
 
-**NOTE: If you have any issues on Apple Silicon, please install PyTorch Nightly (`pip install --pre torch torchvision torchaudio --index-url https://download.pytorch.org/whl/nightly/cpu`)**
-
-You can install our package via. PyPI (Python Package Index), the official Python package index.
-
-```
-pip install voicefixer2
-```
-
-This will install the latest published release.
-
-**If you would like to install the latest development version, please install directly from the source:**
-
-```bash
-pip install git+https://github.com/fakerybakery/voicefixer
-```
-
-### Including in Requirements
-
-You may include voicefixer2 in your requirements.txt file:
-
-```
-voicefixer2
-```
-
-or
-
-```
-git+https://github.com/voicefixer/voicefixer
-```
-
-or, in setup.py
-
-```python
-[
-    'voicefixer2 @ git+https://github.com/voicefixer/voicefixer',
-]
-```
-
-or simply
-
-```python
-[
-    'voicefixer2',
-]
-```
-
-### FFmpeg
-
-**NOTE:** For MP3/OGG/etc (non-WAV) support, you must install [FFmpeg](https://ffmpeg.org/)
-
-**Quick Installation**
-
-* macOS: `brew install ffmpeg`
-* Linux/Ubuntu: `sudo apt install ffmpeg`
-* Windows: `scoop install main/ffmpeg`
-
-This is not guaranteed to work on all devices. Please see [FFmpeg's website](https://ffmpeg.org/) for instructions to install manually.
-
-## Usage
-
-**Important:** FFmpeg must be installed to support non-.wav files.
-
-### Command Line
-
-By default, if no output path is specified, the file will be saved to `outfile.wav`.
-
-Process a file:
-
-```bash
-voicefixer --infile test/utterance/original/original.wav
-```
-
-Process all files in a directory:
-
-```bash
-voicefixer --infolder /path/to/input --outfolder /path/to/output
-```
-
-Change modes (default 0):
-
-```bash
-voicefixer --infile /path/to/input.wav --outfile /path/to/output.wav --mode 1
-```
-
-Run all modes:
-
-```bash
-voicefixer --infile /path/to/input.wav --outfile /path/to/output.wav --mode all
-```
-
-For more information:
-
-```bash
-voicefixer -h
-```
-
-### Python API
-
-```python
-from voicefixer import VoiceFixer
-voicefixer = VoiceFixer()
-# or voicefixer = VoiceFixer(model='voicefixer/voicefixer')
-# Mode 0: Original Model (suggested by default)
-# Mode 1: Add preprocessing module (remove higher frequency)
-# Mode 2: Train mode (might work sometimes on seriously degraded real speech)
-for mode in [0,1,2]:
-    print("Testing mode",mode)
-    voicefixer.restore(
-        input=os.path.join(git_root,"test/utterance/original/original.flac"), # low quality .wav/.flac file
-        output=os.path.join(git_root,"test/utterance/output/output_mode_"+str(mode)+".flac"), # save file path
-        cuda=False, # GPU acceleration
-        mode=mode
-    )
-    if (mode != 2):
-        check("output_mode_" + str(mode) + ".flac")
-    print("Pass")
-```
+The hosted service is subject to the [REST API Terms of Use](https://voicefixer.github.io/voicefixer/api/terms.html).
 
 ## License
 
-VoiceFixer 2 is licensed under the **VoiceFixer license**, a license based on the BSD-3-Clause license with an additional restriction on the logo. Although it is not approved by the OSI, it follows the OSI's guidelines for an open source license.
+VoiceFixer 2 is licensed under the **VoiceFixer license**, a permissive license based on the BSD-3-Clause license with an additional restriction on the logo.
 
-Contributions to this software, including but not limited to pull requests, issues, suggestions, or code contributions, are subject to the following terms:
+## Contribution Policy
 
-By submitting contributions to this project, you grant the authors and maintainers of this software the right to use, modify, distribute, sublicense, and otherwise deal with your contributions, including incorporating them into the software at their discretion. You also affirm that your contributions do not infringe on any third-party rights, and you have the necessary permissions to grant these rights.
-
-Your contributions will be subject to the licensing terms determined by the authors and maintainers of this project. You acknowledge that the authors may choose to apply and/or change a license in the future that may differ from the current terms.
-
-This software may include references or links to other open-source repositories or projects. Please note that we do not endorse, verify, or make any warranties regarding the reliability, accuracy, or suitability of these linked projects. You should use them at your own risk and discretion. Any issues, concerns, or liabilities arising from the use of these linked projects are separate from the responsibilities of the authors and maintainers of this software.
-
-This software and its documentation may contain links to external websites or resources that are not maintained or controlled by the authors or maintainers of this project. We do not endorse, verify, or take responsibility for the content, accuracy, or availability of these external links. Clicking on such links is at your own risk, and any use of external websites or resources is subject to their respective terms and conditions.
+By submitting contributions, you agree to the [docs/contributing.md](Contribution Policy).
 
 ## Note
 
