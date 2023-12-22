@@ -67,8 +67,14 @@ Table of Contents
    :maxdepth: 2
    :caption: Get Started
    
-
    get-started/install.md
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Updates
+
+   news.md
+   changelog.md
 
 .. toctree::
    :maxdepth: 2
@@ -78,4 +84,4 @@ Table of Contents
    Free API <https://huggingface.co/spaces/voicefixer/voicefixer-api>
    GitHub <https://github.com/voicefixer/voicefixer>
    license.md
-
+   faq.md
