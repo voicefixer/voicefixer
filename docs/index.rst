@@ -67,52 +67,54 @@ Here are some examples of what VoiceFixer 2 can do:
 
 Table of Contents
 -----------------
+.. dropdown:: Table of Contents
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Get Started
+   .. toctree::
+      :maxdepth: 1
+      :caption: Get Started
+      
+      get-started/install.md
+      get-started/quickstart.md
+
+   .. toctree::
+      :maxdepth: 2
+      :caption: Usage
+
+      usage/cli.md
+      usage/api/index.rst
+      usage/advanced/index.rst
+      usage/debugging.md
    
-   get-started/install.md
-   get-started/quickstart.md
+   .. toctree::
+      :maxdepth: 1
+      :caption: Updates
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Usage
+      news.md
+      changelog.md
 
-   usage/cli.md
-   usage/api/index.rst
-   usage/advanced/index.rst
-   usage/debugging.md
+   .. toctree::
+      :maxdepth: 2
+      :caption: REST API
 
-.. toctree::
-   :maxdepth: 2
-   :caption: REST API
+      api/index.md
+      api/terms.md
+      api/usage.md
 
-   api/index.md
-   api/terms.md
-   api/usage.md
+   .. toctree::
+      :maxdepth: 1
+      :caption: Project
+      
+      Source Code (GitHub) <https://github.com/voicefixer/voicefixer>
+      Live Demo <https://huggingface.co/spaces/voicefixer/voicefixer>
+      Free API <https://huggingface.co/spaces/voicefixer/voicefixer-api>
+      license.md
+      contributing.md
+      faq.md
+      press.md
 
-.. toctree::
-   :maxdepth: 1
-   :caption: Updates
-
-   news.md
-   changelog.md
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Project
-   
-   Source Code (GitHub) <https://github.com/voicefixer/voicefixer>
-   Live Demo <https://huggingface.co/spaces/voicefixer/voicefixer>
-   Free API <https://huggingface.co/spaces/voicefixer/voicefixer-api>
-   license.md
-   contributing.md
-   faq.md
-
-.. toctree::
-   :maxdepth: 1
-   :caption: Support
-   
-   GitHub Issues <https://github.com/voicefixer/voicefixer/issues>
-   GitHub Discussions <https://github.com/voicefixer/voicefixer/discussions>
+   .. toctree::
+      :maxdepth: 1
+      :caption: Support
+      
+      GitHub Issues <https://github.com/voicefixer/voicefixer/issues>
+      GitHub Discussions <https://github.com/voicefixer/voicefixer/discussions>
