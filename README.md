@@ -115,11 +115,3 @@ VoiceFixer 2 is licensed under the **VoiceFixer license**, a permissive license 
 ## Contribution Policy
 
 By submitting contributions, you agree to the [docs/contributing.md](Contribution Policy).
-
-## Note
-
-Maintenance of VoiceFixer 2 is powered by [NeuralVox](https://github.com/NeuralVox).
-
-## Advertisement
-
-My newest audio-related AI project: TTS API - a open source Tortoise TTS API with streaming support that's coming soon. [Join waitlist](https://github.com/NeuralVox/tts-api). 
