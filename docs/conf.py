@@ -53,7 +53,8 @@ html_permalinks_icon = (
 
 theme_options = ThemeOptions(
     show_prev_next=True,
-    awesome_external_links=False,  # Wait for https://github.com/kai687/sphinxawesome-theme/issues/142#issuecomment-1867066326
+    # awesome_external_links=False,  # Wait for https://github.com/kai687/sphinxawesome-theme/issues/142#issuecomment-1867066326
+    awesome_external_links=True,
     logo_light="_images/logo_round.png",
     logo_dark="_images/logo_round.png",
     extra_header_link_icons={
