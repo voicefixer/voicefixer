@@ -111,6 +111,7 @@ Table of Contents
       contributing.md
       faq.md
       press.md
+      X <https://twitter.com/voicefixer2>
 
    .. toctree::
       :maxdepth: 1
