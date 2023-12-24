@@ -25,6 +25,7 @@ voicefixer.restore(
 from voicefixer import VoiceFixer
 import torch
 import librosa
+import numpy as np
 import soundfile as sf
 # Initialize VF
 voicefixer = VoiceFixer()
@@ -33,7 +34,7 @@ gpu_available = torch.cuda.is_available() or torch.backends.mps.is_available()
 # Load audio
 wav, _ = librosa.load('test.wav', sr=22050) # Only works on .wav
 # Restore audio in mode 0
-out = voicefixer.restore_inmem(wav, gpu_available, 0)
+frames = voicefixer.restore_inmem(wav, gpu_available, 0)
 # Save audio
 shape = list(frames.shape)
 if len(shape) == 1:
