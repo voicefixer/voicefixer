@@ -3,7 +3,7 @@
 
 **Important:** The maintainers(s) of this repository are not affiliated or connected with the original version of VoiceFixer.
 
-# <img src="https://camo.githubusercontent.com/a3b2d4da7e2d171fd691b5d2da5af46013dcb7904132485a3af7d14b6468aeac/68747470733a2f2f6769746875622d70726f64756374696f6e2d757365722d61737365742d3632313064662e73332e616d617a6f6e6177732e636f6d2f37363138363035342f3237303230343034382d34393962333538642d303036332d343562632d393235622d6434313336633035616633342e706e67" width="30"> VoiceFixer 2
+# <img src="https://voicefixer.github.io/voicefixer/_static/logo_round.png" width="30"> VoiceFixer 2
 
 **[Docs](https://voicefixer.github.io/voicefixer/) - [Updates on X](https://twitter.com/voicefixer2)**
 
